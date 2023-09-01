@@ -1,0 +1,29 @@
+.footerWrapper{
+    margin-top: 34px;
+    background: linear-gradient(0deg, 
+    rgba(255,255,255,1) 0%,
+    #E9BD43 80%);
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+.footerQuiz{
+    font-family: Rubik Iso;
+    padding-left: 10px;
+}
+.haveFunIcon{
+    display: flex;
+    align-items: center;
+    height: 100px;
+    padding-right: 10px;
+}
+.haveFunIcon p{
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.icon{
+    padding-left: 5px;
+    font-size: 40px;
+}

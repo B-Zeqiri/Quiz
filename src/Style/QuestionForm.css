@@ -1,0 +1,135 @@
+.qFormWrapper{
+    position: relative;
+    width: 65%;
+    height: 390px;
+    margin: 10px auto ;
+    border-radius: 25px;
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.insideWrapper{
+    width: 95%;
+    height: 100%;
+    margin: auto;
+    background:  #7D3780;
+    border-radius: 15px;
+}
+.questionSection{
+    position: absolute;
+    width: 100%;
+    height: 80px;
+    margin-top: 20px;
+}
+.qestionSectionInside{
+    width: 50%;
+    height: 70px;
+    background:  #E9BD43;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Times New Roman', Times, serif;
+}
+.answerSection{
+    position: absolute;
+    width: 90%;
+    height: 150px;
+    background: #E9BD43;
+    margin-top: 120px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    border-radius: 15px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+
+}
+.answerSection p {
+    border: 2px solid #152744;
+    border-radius: 10px;
+    width: 70%;
+    height: 40px;
+    margin: auto;
+    padding-top: 20px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.answerSection p:hover{
+    box-shadow: rgba(91, 93, 50, 0.25) 0px 30px 60px -12px inset, rgb(92, 72, 0) 0px 18px 36px -18px inset;
+}
+.numberOfQuestions{
+    position: absolute;
+    width: 100%;
+    height: fit-content;
+    margin-top: 300px;
+    display: flex;
+    justify-content: end;
+}
+.numberOfQuestionsInside{
+    width: 30%;
+    height: 50px;
+    background: #E9BD43;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.finalResult{
+    width: 400px;
+    background-color: #E9BD43;
+    border-radius: 10px;
+    padding-bottom: 10px;
+}
+.finalResult button{
+    width: 50%;
+    height: 40px;
+    border-radius: 10px;
+    background-color: red;
+    color: white;
+    border: none;
+    font-weight: 700;
+    font-size: 15px;
+    cursor: pointer;
+}
+.finalResult button:hover{
+    border: 2px solid red;
+    background-color: white;
+    color: red;
+}
+@media only screen and (max-width: 790px) {
+    .qFormWrapper{
+        height: 439px;
+    }
+    .insideWrapper{
+        height: 480px;
+    }
+    .qFormWrapper{
+        width: 90%;
+    }
+    .qestionSectionInside{
+        width: 70%;
+    }
+    .answerSection{
+        height: fit-content;
+        grid-template-columns: repeat(1, 1fr);
+        font-size: 15px;
+    }
+    .answerSection p {
+        width: 60%;
+        height: 30px;
+        margin: 1px auto;
+        padding-top: 10px;
+    }
+    .numberOfQuestions{
+        margin-top: 330px;
+    }
+    .numberOfQuestionsInside{
+        width: 40%;
+    }
+}
